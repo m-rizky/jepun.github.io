@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: SourceSansPro-Regular;
+  src: url(img/SourceSansPro-Regular.ttf);
+}
+body {
+  background-color: #e7f6f2;
+  font-size: 1em;
+  font-family: "SourceSansPro-Regular";
+  margin: 5%;
+}
+
+/* header */
+header {
+  gap: 2.5%;
+  display: grid;
+  grid-template-areas:
+    "hero hero  slide-1"
+    "hero hero  slide-1";
+}
+.hero {
+  grid-area: hero;
+  min-height: 60vh;
+  background-image: url(img/medium-shot-trendy-women-wearing-hats.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.hero > * {
+  display: none;
+}
+.slide {
+  background-color: #0a0a02;
+  color: #fafafa;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.slide-1 {
+  grid-area: slide-1;
+  background-image: url(img/young-adult-spending-time-together-city.jpg);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.slide-1:hover {
+  -webkit-filter: blur(1.5px) grayscale(0.3);
+}
+.menu {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.menu .brand {
+  padding: 5%;
+  font-size: 2em;
+  color: #2c3333;
+  text-align: center;
+}
+.menu ul {
+  align-content: center;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+.menu a {
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background-color: #395b64;
+  color: #e7f6f2;
+}
