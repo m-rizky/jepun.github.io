@@ -287,6 +287,19 @@ font-size: 1.5em;
     align-items: center;
     flex-direction: column;
   }
+  /* .hero > * {
+    border-radius: 5px 15px;
+    display: block;
+    color: #eaeaea;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .hero {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  } */
   .main{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
